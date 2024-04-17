@@ -14,8 +14,8 @@
 #define DELAY_MS 1000
 #define GSM_DELAY_MS 200
 #define RESPONSE_TIMEOUT_MS 200
-#define GPRS_RESPONSE_TIMEOUT_MS 300
-#define DISCONNECT_TIMEOUT_MS 60
+#define GPRS_RESPONSE_TIMEOUT_MS 3000
+#define DISCONNECT_TIMEOUT_MS 4000
 
 // Hook up HC-SR04 with Trig to Arduino Pin 9, Echo to Arduino pin 10
 #define TRIGGER_PIN 6
@@ -49,9 +49,9 @@ boolean endGPRSConnection();
 boolean isGPRSConnected();
 boolean waitForExpectedResponse(const char* expectedAnswer = "OK", unsigned int timeout = RESPONSE_TIMEOUT_MS);
 void connectToThingSpeak();
-void sendDataToThingSpeak(float temperature, float humidity, int gasValue);
+void sendDataToThingSpeak(float temperature, float humidity, int distance);
 void disconnectFromThingSpeak();
-void handleThingSpeak(float temperature, float humidity, int gasValue);
+void handleThingSpeak(float temperature, float humidity, int distance);
 
 const char* APN = "internet";
 const char* USER = "";
