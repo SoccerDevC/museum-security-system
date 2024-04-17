@@ -14,3 +14,4 @@ These temperature
 - Ojok Emmanuel Nsubuga 21/U/06816/PS
 - Katende Brian 21/U/05369/EVE
 - Emuduko Benard 21/U/13693/PS
+- Ainamaani Douglas Bagambe 21/U/3792
